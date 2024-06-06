@@ -1,0 +1,21 @@
+ library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity OrGateController is
+    Port (
+        A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        Y : out STD_LOGIC
+    );
+end OrGateController;
+
+
+architecture Behavioral of OrGateController is
+begin
+
+    process (A, B)
+    begin
+        Y <= A or B;
+    end process;
+end Behavioral;
